@@ -1,0 +1,272 @@
+html{
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  margin:0;
+  font: Verdana;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  "header"
+  "home";
+  grid-template: 'header' 'home';
+  grid-template-rows: 100px 1fr;
+  height: 100%;
+  width: 100%;
+  align-content: center;
+  font: Verdana;
+}
+.home{
+  display: grid;
+  grid-template-areas:
+  "main"
+  "menu";
+  grid-template: 'menu main';
+  grid-template-columns: 250px 1fr;
+}
+.header{
+  grid-area: header;
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.home a{
+  color:lightgoldenrodyellow;
+  font-size: 24px;
+  text-decoration: none;
+}
+.links a{
+  color:white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.links a:hover{
+  color:lightblue;
+}
+.link{
+  padding: 8px;
+}
+.main{
+  grid-area: main; 
+}
+.menu{
+  grid-area: menu;
+  background-color:whitesmoke;
+  display:list-item;
+  justify-content: center;
+  padding: 30px; 
+}
+.menu a{
+  color:orangered;
+  font-size: 26px;
+}
+.categories{
+  list-style-type: none;
+  padding: 10px;
+  justify-items: center;
+}
+.contact{
+  list-style-type: none;
+  padding: 20px;
+  font-size: 26px;
+  color: orangered;
+  justify-items: center;
+  text-align: center;
+  align-content: center;
+}
+.contact li{
+  padding: 20px;
+}
+.cat{
+  color: orangered;
+  font-size: 20px;
+  padding: 20px;
+}
+.title{
+  font-size: 28px;
+  text-align: left;
+  color: black;
+}
+.title span{
+  font-size: 14px;
+  color: red;
+}
+.type{
+  font-size: 28px;
+  text-align: center;
+  color: black;
+}
+.products{
+  list-style-type: none;
+}
+.product{
+  display: grid;
+  grid-template-areas:
+  "left"
+  "middle"
+  "right";
+  grid-template: 'left middle right';
+  grid-template-columns: 1fr 80px 100px;
+}
+.left{
+  grid-area: left;
+}
+.middle{
+  grid-area: middle;
+}
+.right{
+  grid-area: right;
+}
+.cart{
+  display: grid;
+  grid-template-areas:
+  "l"
+  "ml"
+  "mr"
+  "r";
+  grid-template: 'l ml mr r';
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.l{
+  grid-area: l;
+}
+.ml{
+  grid-area: ml;
+}
+.mr{
+  grid-area: mr;
+}
+.r{
+  grid-area: r;
+}
+.product-price{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.product-qty{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.product-name{
+  font-size: 20px;
+  color: rgb(243, 12, 12);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.product-namec{
+  font-size: 20px;
+  color: rgb(243, 12, 12);
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.product-btn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.delete{
+  
+  border-style:dotted;
+  cursor: pointer;
+  background-color:  orange;
+}
+.right ul{
+  list-style-type: none;
+  padding: 10px;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+.right li{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.add{
+  border-style:dotted;
+  cursor: pointer;
+  background-color: orange;
+}
+.confirm{
+  border-style:dotted;
+  cursor: pointer;
+  background-color:  orange;
+  font-size: 24px;
+  align-self: center;
+}
+.form{
+  max-width: 400px;
+  margin: 0 auto;
+}
+.form > div {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.form label{
+  margin: 10px 0;
+  display: block;
+}
+.parag{
+  
+  font-size: 26px;
+  color: orangered;
+  justify-items: center;
+  text-align: center;
+  align-content: center;
+}
+.orderlistdiv th{
+  font: Verdana;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: orangered;
+  text-align: left;
+}
+.orderlistdiv li{
+  list-style-type: none;
+}
+.table{
+  padding-top: 25px;
+}
+.table1{
+  table-layout:initial;
+}
+.delbtn{
+  background-color: red;
+}
+.opt{
+  justify-items: center;
+  text-align: center;
+  align-content: center;
+  padding-top: 20px;
+}
+.profile{
+  max-width: 600px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.profile > div {
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+}
+.para{
+  font-size: 24px;
+  color: orangered;
+  justify-items: center;
+  text-align: left;
+}
+.alert{
+  color: red;
+}
+.red{
+  color:orangered;
+}
